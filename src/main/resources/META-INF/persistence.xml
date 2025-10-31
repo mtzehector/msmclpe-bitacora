@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="bitacora" transaction-type="JTA">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <jta-data-source>jdbc/mpcle</jta-data-source>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcCondicionOferta</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcEntidadFinanciera</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcEstadoReporte</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcPlazo</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcSubTipoReporte</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcTareaAccion</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcTareaEstadoOrigen</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcTipoEvento</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcTipoModificacion</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.MclcTipoReporte</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacora</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacoraCatEF</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacoraCatImss</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacoraEstatusEF</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacoraInterfaz</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacoraNotificacion</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacoraPensionado</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacoraPersona</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltBitacoraReporte</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltCronTarea</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltDocumento</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltDocumentoConciliacion</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltDocumentoEFPS</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltHistoricoUsuario</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltPrestadorServiciosEF</class>
+    <class>mx.gob.imss.dpes.bitacoraback.entity.McltToken</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.use_sql_comments" value="true"/>
+      <property name="hibernate.max_fetch_depth" value="1"/>
+      <property name="hibernate.id.new_generator_mappings" value="true"/>
+      <property name="hibernate.jdbc.batch_size" value="1"/>
+    </properties>
+  </persistence-unit>
+</persistence>
